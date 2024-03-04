@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:dio_log/dio_log.dart';
 
@@ -11,4 +13,12 @@ initHttp() {
 
 httpGet(String url) {
   dio.get(url);
+  dio.get(
+    url,
+    queryParameters: {'foo': 'bar'},
+    data: jsonEncode({'baz': 'qaz'}),
+    options: Options(
+      headers: {'a': 'b'},
+    ),
+  );
 }

@@ -20,7 +20,9 @@ showDebugBtn(BuildContext context, {Widget? button, Color? btnColor}) async {
 
     ///显示悬浮menu
     Overlay.of(context)?.insert(itemEntry!);
-  } catch (e) {}
+  } catch (e) {
+    debugPrint(e.toString());
+  }
 }
 
 ///关闭悬浮按钮
