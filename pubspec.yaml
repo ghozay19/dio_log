@@ -4,12 +4,12 @@ version: 2.0.4
 homepage: https://github.com/flutterplugin/dio_log
 
 environment:
-  sdk: ">=2.19.5 <3.0.0"
+  sdk: ">=2.19.5 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  dio: ^5.0.0
+  dio: ^5.3.3
 
 dev_dependencies: 
   flutter_test:

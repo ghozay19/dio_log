@@ -44,7 +44,7 @@ class _HttpLogListWidgetState extends State<HttpLogListWidget> {
               child: Align(
                 child: Text(
                   debugBtnIsShow() ? 'close overlay' : 'open overlay',
-                  style: theme.textTheme.caption!
+                  style: theme.textTheme.bodySmall!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
               ),
@@ -60,7 +60,7 @@ class _HttpLogListWidgetState extends State<HttpLogListWidget> {
               child: Align(
                 child: Text(
                   'clear',
-                  style: theme.textTheme.caption!
+                  style: theme.textTheme.bodySmall!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
               ),
@@ -93,7 +93,7 @@ class _HttpLogListWidgetState extends State<HttpLogListWidget> {
 
     Color? textColor = LogPoolManager.getInstance().isError(item)
         ? Colors.red
-        : Theme.of(context).textTheme.bodyText1!.color;
+        : Theme.of(context).textTheme.bodyMedium!.color;
     return Card(
       margin: EdgeInsets.all(8),
       elevation: 6,
